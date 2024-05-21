@@ -77,8 +77,7 @@ def get_current_clients():
         else:
             return clients
             # Returns the 'clients' list, which contains the client data retrieved from the API. Each element in the list is a dictionary representing a client, with keys for different client properties.
-clients = get_current_clients()
-print(clients)
+
 
 
 # This function retrieves the details of a specified project in Asana using the Asana API. The project is specified by its unique identifier (GID), which is obtained from the client data retrieved from the HubSpot API.@retry(attempts=5, delay=2, backoff=2)
