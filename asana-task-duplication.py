@@ -91,10 +91,10 @@ def get_project(project_gid):
 
 
 
-# This function creates a duplicate of a specified task in Asana using the Asana API. The duplicated task is then ready for association with each client's project.
+# This function creates a duplicate of a specified task in Asana using the Asana API. The duplicated task is then ready for association with each client's project. Replace <Task GID> with the GID of the task you are duplicating.
 @retry(attempts=5, delay=2, backoff=2)
 def duplicate_checkin_task(name):
-    url = "https://app.asana.com/api/1.0/tasks/1207238712672804/duplicate"
+    url = "https://app.asana.com/api/1.0/tasks/<task GID>/duplicate"
     data = json.dumps({
         "data": {
             "name": f"{name} Advertising Check-in",
@@ -136,7 +136,8 @@ def main():
         #client_task_gid = client_task['new_task']['gid']
         #add_project(client_task_gid, asana_project_gid)
 
-        
+        # Uncomment above 3 lines by removing # to run when ready to create new tasks
+        # Running the code with the above lines uncommented will create new tasks in Asana for every active client - test with # to ensure any changes take effect without risk of task creation
 
 
 
