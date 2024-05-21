@@ -24,7 +24,7 @@ This script automates the process of duplicating tasks across all Asana project 
 Run the script to start the task duplication process:
 
 ```bash
-python duplicate-task-with-error-handling.py
+python asana-task-duplication.py
 ```
 
 The script uses functions for specific API interactions and error handling tasks.
