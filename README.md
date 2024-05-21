@@ -2,7 +2,9 @@
 
 ## Overview
 
-This script automates the process of duplicating tasks across all Asana project (with error handling). It interacts with various APIs to fetch and duplicate tasks.
+This script automates the process of duplicating tasks across all Asana project (with error handling). It pulls Asana links from Hubspot for Active Full Service & PPC clients. Those links are then parsed for the board GID will duplicate a specified task to each ASANA board identified.
+
+NOTE: Last 3 lines are commented out to prevent accidental runs. Remove # from last three lines to initiate.
 
 ## Features
 
