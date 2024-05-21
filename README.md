@@ -23,11 +23,37 @@ NOTE: Last 3 lines are commented out to prevent accidental runs. Remove # from l
 
 ## Usage
 
+Replace `<Task GID>` with the GID of the task to be duplicated in the `duplicate_checkin_task` function 
+
+   ```bash
+   def duplicate_checkin_task(name):
+       url = "https://app.asana.com/api/1.0/tasks/<Task GID>/duplicate"
+   ```
+
+
+When ready to create new tasks, uncomment last 3 lines by removing `#` to run. 
+
+
+   ```bash
+        #client_task = duplicate_checkin_task(client['properties']['name'])
+        #client_task_gid = client_task['new_task']['gid']
+        #add_project(client_task_gid, asana_project_gid)
+   ```
+
+`Note: Running after this step will result in the specified task being duplicated across ALL Active Client Asana boards.`
+
+`Avoid improper task creation by testing any modifications with # applied to the lines above.`
+
+
+
+
+
+
 Run the script to start the task duplication process:
 
-```bash
-python asana-task-duplication.py
-```
+   ```bash
+   python asana-task-duplication.py
+   ```
 
 The script uses functions for specific API interactions and error handling tasks.
 
