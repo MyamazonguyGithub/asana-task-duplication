@@ -23,6 +23,12 @@ NOTE: Last 3 lines are commented out to prevent accidental runs. Remove # from l
 
 ## Usage
 
+Replace `.env` file location with local files location path. 
+
+   ```bash
+   load_dotenv('C:\\Users\\PATH\\asana-task-duplication.env')
+   ```
+
 Replace `<Task GID>` with the GID of the task to be duplicated in the `duplicate_checkin_task` function 
 
    ```bash
