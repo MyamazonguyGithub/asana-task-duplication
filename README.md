@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script automates the process of duplicating tasks with error handling. It interacts with various APIs to fetch and duplicate tasks.
+This script automates the process of duplicating tasks across all Asana project (with error handling). It interacts with various APIs to fetch and duplicate tasks.
 
 ## Features
 
